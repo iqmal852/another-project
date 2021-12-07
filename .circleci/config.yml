@@ -54,4 +54,5 @@ jobs:
             - node_modules
 
       # prepare the database
+      - run: php artisan key:generate
       - run: ./vendor/bin/phpunit
