@@ -54,5 +54,6 @@ jobs:
             - node_modules
 
       # prepare the database
+      - run: cp .env.example .env
       - run: php artisan key:generate
       - run: ./vendor/bin/phpunit
